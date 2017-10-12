@@ -38,11 +38,11 @@ from employees
 where last_name LIKE 'E%'
       and last_name like '%E';
 
-select first_name, last_name, hire_date, birth_date
+select hire_date, first_name, last_name
 from employees
 where hire_date BETWEEN '1990-01-01' and '1999-12-31'
       and birth_date like '%-12-25'
-ORDER BY hire_date DESC ;
+ORDER BY birth_date, hire_date DESC ;
 
 select *
 from employees
