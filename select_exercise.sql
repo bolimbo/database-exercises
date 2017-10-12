@@ -1,14 +1,15 @@
+
 use codeup_test_db;
 
 
 Select name as "-albums by Pink Floyd"
-  From albums
-  Where artist = 'Pink Floyd';
+From albums
+Where artist = 'Pink Floyd';
 
 
 SELECT release_date as "-Sgt. Pepper''s Lonely Hearts Club Band release date"
 FROM albums
-  WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band';
+WHERE name = 'Sgt. Pepper''s Lonely Hearts Club Band';
 
 SELECT genre as "- genre for nevermind album"
 from albums
