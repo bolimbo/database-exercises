@@ -2,11 +2,12 @@ use employees;
 
 
 
-select COUNT(*)
+select COUNT(*), gender
 from employees
 where (first_name = 'Irena'
        or first_name = 'Vidya'
        or first_name = 'Maya')
+
 
 GROUP BY gender;
 
@@ -54,8 +55,9 @@ select *
 from employees
 where birth_date LIKE '%-12%-25%';
 
-select count(last_name)
+select first_name ,last_name ,count(*)
 from employees
 where last_name LIKE '%q%'
       and last_name NOT like '%qu%'
+GROUP BY first_name,last_name
 ORDER BY last_name;
